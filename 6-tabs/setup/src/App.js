@@ -6,7 +6,7 @@ const url = 'https://course-api.com/react-tabs-project'
 function App() {
   const [loading, setLoading] = useState(true)
   const [jobs, setJobs] = useState([])
-  const [value, setValue] = useState(0)
+  const [value, setValue] = useState(0) //value = index
 
   const fetchJobs = async () => {
     const reponse = await fetch(url)
