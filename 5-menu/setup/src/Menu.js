@@ -17,7 +17,7 @@ const Menu = ({ items }) => {
         </article>
       )
     })};
-  </div>;
+  </div>
 };
 
 export default Menu;
