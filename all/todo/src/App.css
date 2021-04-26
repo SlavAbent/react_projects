@@ -25,15 +25,28 @@
   transition: .3s;
   position: relative;
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  transition: .5s;
+  opacity: 0;
+  transform: translateY(-100px);
 }
 
 .todo-alert-success{
   background-color: hsl(125, 66%, 53%);
   color: hsl(209, 61%, 16%);
+  opacity: 1;
+  transform: translateY(0px);
 }
 .todo-alert-danger{
   background-color:hsl(360, 71%, 66%);
   color: hsl(212, 33%, 89%);
+  opacity: 1;
+  transform: translateY(0px);
+}
+.todo-alert-warning{
+  background-color:rgb(203, 228, 62);
+  color: hsl(0, 0%, 12%);
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .todo-alert-remove{
@@ -45,6 +58,7 @@
   height: 10px;
   text-transform: lowercase;
 }
+
 
 .section-center{
   display: flex;
@@ -117,6 +131,7 @@
 .todo-container{
   width: 100%;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .todo-item{
@@ -131,10 +146,15 @@
 
 
 .title{
+  margin: 10px 0;
   font-size: 18px;
   color: hsl(209, 61%, 16%);
   display: flex;
   flex-grow: 1;
+}
+
+.title-active{
+  text-decoration: line-through;
 }
 
 
