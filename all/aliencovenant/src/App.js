@@ -1,12 +1,17 @@
+import React, {useState} from 'react'
+
 import './App.sass';
 
-import Header from './components/header'
-import Body from './components/body'
+import Main from './components/main'
+// import Body from './components/body'
+
+import data from './data'
 
 function App() {
+  const [info, setInfo] = useState(data)
   return (
     <div className="App">
-      <Header />
+      <Main data={data}/>
     </div>
   );
 }
