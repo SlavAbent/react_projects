@@ -1,0 +1,21 @@
+.body {
+  display: flex;
+  align-items: flex-start;
+  padding: 50px 70px;
+}
+.body__images {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+.body__img {
+  width: 320px;
+  height: 100%;
+}
+
+.casts__image {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
